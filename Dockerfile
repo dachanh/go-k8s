@@ -1,6 +1,6 @@
 FROM golang:alpine
-RUN mdkir /app
+RUN mkdir /app
 COPY . /app
 WORKDIR /app
 RUN go build -o main .
-CMD["/app/main"]
+CMD ["/app/main"]

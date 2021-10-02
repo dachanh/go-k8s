@@ -1,14 +1,19 @@
 # go-k8s
 
 
-Run Docker : docker build -t dachanh/go-deployments .
-Start Minikube : minikube start 
-kubectl create -f deployment.yaml
-kubectl expose deployment go-app-simple --type=NodePort --name=go-app-svc
+Run Docker : <b>docker build -t dachanh/go-deployments .</b>
+
+Start Minikube :<b> minikube start </b> 
+
+Create Pod : <b>kubectl create -f deployment.yaml</b>
+
+Developments:<b> kubectl expose deployment go-app-simple --type=NodePort --name=go-app-svc</b>
 
 
 
 Note : 
 Run locally docker images , you should set :
- minikube docker-env 
- eval $(minikube -p minikube docker-env)
+ 
+<b> minikube docker-env </b> 
+ 
+<b> eval $(minikube -p minikube docker-env)</b>

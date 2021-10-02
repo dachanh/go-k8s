@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: go-deployments
-        image: dachanh/go-deployments
+        image: dachanh/go-deployments:latest
         imagePullPolicy: Never
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort:  3333
+        - containerPort:  3000
